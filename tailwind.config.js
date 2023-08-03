@@ -8,9 +8,35 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'hero-cookies': "url('/hero-cookies.jpg')",
+      },
+      backgroundColor: {
+        'default-10': '#feffff',
+        'default-50': '#efe4db',
+        'default-100': '#dfcab8',
+        'default-200': '#d0b094',
+        'default-300': '#c09671',
+        'default-400': '#b07c4e',
+        'default-500': '#8d633e',
+        'default-600': '#6a4a2e',
+        'default-700': '#46311f',
+        'default-800': '#2d1f14',
+        'default-900': '#1c130c',
+        'default-950': '#0b0705',
+      },
+      textColor: {
+        'default-10': '#feffff',
+        'default-50': '#efe4db',
+        'default-100': '#dfcab8',
+        'default-200': '#d0b094',
+        'default-300': '#c09671',
+        'default-400': '#b07c4e',
+        'default-500': '#8d633e',
+        'default-600': '#6a4a2e',
+        'default-700': '#46311f',
+        'default-800': '#2d1f14',
+        'default-900': '#1c130c',
+        'default-950': '#0b0705',
       },
     },
   },

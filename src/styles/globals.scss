@@ -12,11 +12,26 @@
   font-family: 'Lora', serif;
 }
 
+::selection {
+  color: #0b0705;
+  background-color: #e5bb22;
+}
+
 @layer base {
   input[type='number']::-webkit-inner-spin-button,
   input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+}
+
+@layer utilities {
+  .max-container {
+    @apply max-w-[76rem] w-[90%] mx-auto;
+  }
+
+  .default-button {
+    @apply bg-default-100 font-bold py-2 px-4 w-fit rounded-xl shadow-md transition-transform active:translate-y-px;
   }
 }
 
