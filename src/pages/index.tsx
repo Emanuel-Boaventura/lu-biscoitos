@@ -10,7 +10,7 @@ export default function Home() {
     <main className='flex flex-col w-full text-default-10'>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <Header setOpenMenu={setOpenMenu} />
-      {/* <Hero /> */}
+      <Hero />
       <div className='flex bg-default-100 text-default-950'>
         <p>Product</p>
       </div>
