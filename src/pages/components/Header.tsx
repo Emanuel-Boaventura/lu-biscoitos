@@ -1,6 +1,5 @@
 import useMediaQuery from '@/hooks/useMediaQuery'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { List } from '@phosphor-icons/react'
 import { type Dispatch, type SetStateAction } from 'react'
 
 interface IHeader {
@@ -20,8 +19,7 @@ export default function Header({ setOpenMenu }: IHeader) {
         </div>
 
         {mobile ? (
-          <FontAwesomeIcon
-            icon={faBars}
+          <List
             onClick={() => setOpenMenu(prevState => !prevState)}
             className='w-auto h-6'
           />

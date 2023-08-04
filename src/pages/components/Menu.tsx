@@ -1,6 +1,5 @@
+import { X } from '@phosphor-icons/react'
 import { type Dispatch, type SetStateAction } from 'react'
-import { faX } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 interface IMenu {
   openMenu: boolean
@@ -18,7 +17,7 @@ export default function Menu({ openMenu, setOpenMenu }: IMenu) {
         openMenu ? '' : 'translate-x-[100%]'
       }`}
     >
-      <FontAwesomeIcon icon={faX} onClick={closeMenu} className='self-end' />
+      <X onClick={closeMenu} className='self-end w-auto h-6' />
       <a
         href='#biscuits'
         onClick={closeMenu}
