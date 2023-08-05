@@ -7,7 +7,7 @@ interface IHeader {
 }
 
 export default function Header({ setOpenMenu }: IHeader) {
-  const mobile = useMediaQuery('(max-width: 768px)')
+  const mobile = useMediaQuery('(max-width: 520px)')
 
   return (
     <section className='flex bg-default-800'>
