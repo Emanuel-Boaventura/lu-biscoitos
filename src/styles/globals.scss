@@ -55,7 +55,7 @@ button {
   background-color: transparent;
   border: none;
 
-  &:not(:disabled):active {
+  &:not(:disabled):not(.no-animation):active {
     transform: translateY(1px);
   }
 
