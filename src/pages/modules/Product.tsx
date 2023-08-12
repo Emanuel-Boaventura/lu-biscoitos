@@ -1,6 +1,4 @@
-import hero from '@/public/hero-cookies.jpg'
-import Image from 'next/image'
-import ImageCarousel from './ImageCarousel'
+import ImageCarousel from '../components/ImageCarousel'
 
 export default function Product() {
   return (

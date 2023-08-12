@@ -1,8 +1,8 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
+import Header from './modules/Header'
+import Hero from './modules/Hero'
 import Menu from './components/Menu'
 import { useState } from 'react'
-import Product from './components/Product'
+import Product from './modules/Product'
 
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false)
