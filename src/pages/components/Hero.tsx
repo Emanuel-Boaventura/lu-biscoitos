@@ -13,6 +13,13 @@ export default function Hero() {
             Biscoitos da Lu
           </h1>
 
+          <Image
+            src={hero}
+            alt='Cookies'
+            quality={100}
+            className='object-cover w-full mb-5 h-[8rem] rounded-3xl sm:hidden flex'
+          />
+
           <p className='text-sm sm:text-base text-center sm:text-left sm:w-[90%] mb-5 sm:mb-10 flex'>
             {mobile
               ? 'Biscoitos caseiros irresistíveis! Temos uma ampla variedade de sabores para todos os paladares. E melhor de tudo, são feitos com amor. Experimente essa delícia única!'
