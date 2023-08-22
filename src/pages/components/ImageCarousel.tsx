@@ -1,5 +1,6 @@
 import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 import Image, { StaticImageData } from 'next/image'
+import Carousel from 'nuka-carousel'
 import { useState } from 'react'
 
 interface IImageCarousel {
@@ -27,15 +28,11 @@ const ImageCarousel = ({ images }: IImageCarousel) => {
   return (
     <div className='relative'>
       <div className='max-w-[76rem] overflow-hidden relative'>
-        <div className='flex w-fit'>
+        <Carousel autoplay wrapAround className='w-fit'>
           {images.map(image => (
             <div
               key={image.description}
-              className={`grid grid-cols-[240px_1fr] justify-between w-[46.5rem] lg:w-[76rem] gap-8 items-center `}
-              style={{
-                transform: `translateX(-${current * 100}%)`,
-                transition: 'transform 0.3s ease-in-out',
-              }}
+              className={`grid grid-cols-[240px_1fr] justify-between gap-8 items-center `}
             >
               <div className='flex  items-center w-60 h-72 justify-center border-white border-4'>
                 <Image
@@ -48,7 +45,7 @@ const ImageCarousel = ({ images }: IImageCarousel) => {
               <p>{image.description}</p>
             </div>
           ))}
-        </div>
+        </Carousel>
       </div>
       <button
         onClick={prevImage}
