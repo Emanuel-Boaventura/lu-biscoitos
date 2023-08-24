@@ -1,7 +1,7 @@
 import { CaretLeft, CaretRight } from '@phosphor-icons/react'
 import Image, { StaticImageData } from 'next/image'
-import Carousel from 'nuka-carousel'
 import { useState } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
 
 interface IImageCarousel {
   images: {
@@ -11,54 +11,30 @@ interface IImageCarousel {
 }
 
 const ImageCarousel = ({ images }: IImageCarousel) => {
-  const [current, setCurrent] = useState(0)
-
-  const nextImage = () => {
-    setCurrent(prevState =>
-      prevState === images.length - 1 ? 0 : prevState + 1
-    )
-  }
-
-  const prevImage = () => {
-    setCurrent(prevState =>
-      prevState === 0 ? images.length - 1 : prevState - 1
-    )
-  }
-
+  const [emblaRef] = useEmblaCarousel()
   return (
     <div className='relative'>
       <div className='max-w-[76rem] overflow-hidden relative'>
-        <Carousel autoplay wrapAround className='w-fit'>
-          {images.map(image => (
-            <div
-              key={image.description}
-              className={`grid grid-cols-[240px_1fr] justify-between gap-8 items-center `}
-            >
-              <div className='flex  items-center w-60 h-72 justify-center border-white border-4'>
-                <Image
-                  src={image.src}
-                  alt='Carousel'
-                  className='w-full object-contain'
-                />
+        <div className='embla' ref={emblaRef}>
+          <div className='embla__container'>
+            {images.map(image => (
+              <div
+                key={image.description}
+                className='embla__slide flex justify-between gap-8 items-center'
+              >
+                <div className='flex w-[70px] items-center justify-center border-white border-4'>
+                  <Image
+                    src={image.src}
+                    alt='Carousel'
+                    className='object-contain h-10'
+                  />
+                  <p className=''>{image.description}</p>
+                </div>
               </div>
-
-              <p>{image.description}</p>
-            </div>
-          ))}
-        </Carousel>
+            ))}
+          </div>
+        </div>
       </div>
-      <button
-        onClick={prevImage}
-        className='text-white absolute top-1/2 -translate-y-1/2 -left-[3rem] no-animation'
-      >
-        <CaretLeft size={32} />
-      </button>
-      <button
-        onClick={nextImage}
-        className='text-white absolute top-1/2 -translate-y-1/2 -right-[3rem] no-animation'
-      >
-        <CaretRight size={32} />
-      </button>
     </div>
   )
 }
