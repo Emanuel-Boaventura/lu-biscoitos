@@ -8,16 +8,19 @@ export default function Product() {
   const [images, setImages] = useState([
     {
       src: cookie1,
+      name: 'Cookie Tradicional',
       description:
         'Biscoitos caseiros irresistíveis! Temos uma ampla variedade de sabores para todos os paladares. E melhor de tudo, são feitos com amor. Experimente essa delícia única!',
     },
     {
       src: cookie2,
+      name: 'Cookie Vegano',
       description:
         'Explore a mistura perfeita de texturas e sabores em nossos biscoitos de aveia e chocolate. Cada mordida combina crocância com indulgência de cacau, criando uma experiência única.',
     },
     {
       src: cookie3,
+      name: 'Biscoito Natalino',
       description:
         'Experimente o sabor rico da manteiga em nossos biscoitos artesanais. Com uma casquinha crocante e interior macio, cada mordida oferece indulgência e conforto como nenhum outro.',
     },

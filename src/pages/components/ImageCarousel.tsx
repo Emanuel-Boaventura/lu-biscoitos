@@ -6,34 +6,40 @@ import useEmblaCarousel from 'embla-carousel-react'
 interface IImageCarousel {
   images: {
     src: StaticImageData
+    name: string
     description: string
   }[]
 }
 
 const ImageCarousel = ({ images }: IImageCarousel) => {
-  const [emblaRef] = useEmblaCarousel()
+  const [emblaRef] = useEmblaCarousel({ loop: true })
+
   return (
-    <div className='relative'>
-      <div className='max-w-[76rem] overflow-hidden relative'>
-        <div className='embla' ref={emblaRef}>
-          <div className='embla__container'>
-            {images.map(image => (
-              <div
-                key={image.description}
-                className='embla__slide flex justify-between gap-8 items-center'
-              >
-                <div className='flex w-[70px] items-center justify-center border-white border-4'>
-                  <Image
-                    src={image.src}
-                    alt='Carousel'
-                    className='object-contain h-10'
-                  />
-                  <p className=''>{image.description}</p>
-                </div>
+    <div className='embla overflow-hidden' ref={emblaRef}>
+      <div className='embla__container flex'>
+        {images.map(image => (
+          <div
+            key={image.description}
+            className='embla__slide flex-[0_0_100%] min-w-0 mr-[1px] cursor-pointer'
+          >
+            <div className='grid grid-cols-1 sm:grid-cols-[3fr_7fr] sm:gap-6 lg:gap-10'>
+              <div className='flex items-center justify-center border-white border-4 mb-4 sm:mb-0'>
+                <Image
+                  src={image.src}
+                  alt='Carousel'
+                  className='object-cover h-28 sm:h-44 lg:h-72'
+                />
               </div>
-            ))}
+
+              <div className='text-center sm:text-start sm:my-auto'>
+                <p className='font-bold text-lg mb-1 sm:text-xl lg:text-2xl'>
+                  {image.name}
+                </p>
+                <p>{image.description}</p>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   )
