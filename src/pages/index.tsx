@@ -3,6 +3,7 @@ import Hero from './modules/Hero'
 import Menu from './components/Menu'
 import { useState } from 'react'
 import Product from './modules/Product'
+import Contact from './modules/Contact'
 
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -13,9 +14,7 @@ export default function Home() {
       <Header setOpenMenu={setOpenMenu} />
       <Hero />
       <Product />
-      <div className='flex bg-default-800'>
-        <p>Contact</p>
-      </div>
+      <Contact />
       <div className='flex bg-default-950'>
         <p>Footer</p>
       </div>
