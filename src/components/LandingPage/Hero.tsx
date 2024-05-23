@@ -1,6 +1,6 @@
+import useMediaQuery from '@/hooks/useMediaQuery'
 import Image from 'next/image'
 import hero from '@/public/hero-cookies.jpg'
-import useMediaQuery from '@/hooks/useMediaQuery'
 
 export default function Hero() {
   const mobile = useMediaQuery('(max-width: 768px)')

@@ -2,7 +2,7 @@ import cookie1 from '@/public/cookie-1.jpg'
 import cookie2 from '@/public/cookie-2.jpg'
 import cookie3 from '@/public/cookie-3.jpg'
 import { useState } from 'react'
-import ImageCarousel from '../components/ImageCarousel'
+import ImageCarousel from '../ImageCarousel'
 
 export default function Product() {
   const [images, setImages] = useState([

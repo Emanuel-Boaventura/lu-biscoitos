@@ -1,9 +1,10 @@
-import Header from './modules/Header'
-import Hero from './modules/Hero'
-import Menu from './components/Menu'
 import { useState } from 'react'
-import Product from './modules/Product'
-import Contact from './modules/Contact'
+import Contact from '../components/LandingPage/Contact'
+import Footer from '../components/LandingPage/Footer'
+import Header from '../components/LandingPage/Header'
+import Hero from '../components/LandingPage/Hero'
+import Product from '../components/LandingPage/Product'
+import Menu from '../components/Menu'
 
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false)
@@ -15,9 +16,7 @@ export default function Home() {
       <Hero />
       <Product />
       <Contact />
-      <div className='flex bg-default-950'>
-        <p>Footer</p>
-      </div>
+      <Footer />
     </main>
   )
 }
