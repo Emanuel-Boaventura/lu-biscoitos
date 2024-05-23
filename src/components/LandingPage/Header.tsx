@@ -38,7 +38,7 @@ export default function Header({ setOpenMenu }: IHeader) {
               Marca
             </a>
             <a
-              href='#form'
+              href='#contact'
               className='default-button !px-3 !py-1 !text-default-900'
             >
               Encomendar!

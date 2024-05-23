@@ -9,7 +9,7 @@ export default function Hero() {
     <section className='flex bg-default-600'>
       <div className='max-container flex flex-col items-center justify-between py-10 sm:flex-row'>
         <div className='flex flex-col  items-center sm:items-start'>
-          <h1 className='mb-5 text-3xl font-bold tracking-wider sm:text-4xl'>
+          <h1 className='mb-5 text-3xl font-bold tracking-wider sm:text-4xl lg:text-5xl'>
             Biscoitos da Lu
           </h1>
 
@@ -26,7 +26,7 @@ export default function Hero() {
               : 'Nossos biscoitos caseiros são irresistíveis! Feitos com ingredientes selecionados e muita dedicação, possuem um sabor inigualável. Temos uma ampla variedade de sabores para agradar todos os paladares. O melhor de tudo? São feitos com amor. Experimente essa delícia única!'}
           </p>
 
-          <a href='#form' className='default-button flex !text-default-900'>
+          <a href='#contact' className='default-button flex !text-default-900'>
             Pedir agora!
           </a>
         </div>
