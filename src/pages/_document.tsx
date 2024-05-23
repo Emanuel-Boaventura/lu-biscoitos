@@ -39,8 +39,8 @@ export default function Document() {
           itemProp='image'
           content='https://lu-biscoitos.vercel.app/og.png'
         />
-        <meta property='og:image:width' content='800' />
-        <meta property='og:image:height' content='600' />
+        <meta property='og:image:width' content='256' />
+        <meta property='og:image:height' content='256' />
         <meta property='og:type' content='website' />
       </Head>
       <body>

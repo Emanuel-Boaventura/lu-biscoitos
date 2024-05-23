@@ -1,48 +1,52 @@
-import cookie1 from '@/public/cookie-1.jpg'
-import cookie2 from '@/public/cookie-2.jpg'
-import cookie3 from '@/public/cookie-3.jpg'
+import amanteigado from '@/public/biscoitos/amanteigado.png'
+import casadinho from '@/public/biscoitos/casadinho.png'
+import coco from '@/public/biscoitos/coco.png'
+import francisquito from '@/public/biscoitos/francisquito.png'
+import leiteMoca from '@/public/biscoitos/leite-moca.png'
+import milho from '@/public/biscoitos/milho.png'
+import nata from '@/public/biscoitos/nata.png'
 import Image from 'next/image'
 import { useState } from 'react'
 
 const allCookies = [
   {
-    src: cookie1,
+    src: casadinho,
     name: 'Casadinho',
     description:
       'Biscoito de maisena com recheio de goiabada e refogado no açúcar refinado. Existe também a opção de recheio de doce de leite.',
   },
   {
-    src: cookie2,
+    src: nata,
     name: 'Nata',
     description:
       'Biscoito de maisena crocante com açúcar caramelizado por cima.',
   },
   {
-    src: cookie3,
-    name: 'Doce de Leite',
+    src: leiteMoca,
+    name: 'Leite Moça',
     description:
-      'Biscoito de maisena feito com doce de leite. Macio e derrete na boca',
+      'Biscoito de maisena feito com leite moça. Macio e derrete na boca',
   },
   {
-    src: cookie3,
+    src: coco,
     name: 'Coco',
     description:
       'Biscoito de macio com lascas de coco, derretendo na boca consegue sentir o sabor do coco fresco.',
   },
   {
-    src: cookie3,
+    src: milho,
     name: 'Milho',
     description:
       'Biscoito de feito com erva doce, crocante e com o sabor do milho fresco.',
   },
   {
-    src: cookie3,
+    src: francisquito,
     name: 'Francisquito',
     description:
       'Biscoito de leve e crocante e açucarado, chegando a derreter na boca depois das primeiras mordidas',
   },
   {
-    src: cookie3,
+    src: amanteigado,
     name: 'Amanteigado',
     description:
       'Biscoito de maisena crocante e açucarado, refogado com açúcar e canela deixa um sabor marcante na boca.',
