@@ -33,9 +33,10 @@ export default function Document() {
         />
         <meta property='og:url' content='https://lu-biscoitos.vercel.app/' />
         <meta property='og:site_name' content='Next.js' />
-        <meta property='og:locale' content='en_US' />
+        <meta property='og:locale' content='pt_BR' />
         <meta
           property='og:image:url'
+          itemProp='image'
           content='https://lu-biscoitos.vercel.app/og.png'
         />
         <meta property='og:image:width' content='800' />
