@@ -43,7 +43,7 @@ export default function Contact() {
           Ficou interessado? Entre em contato conosco pelo{' '}
           <a
             target='_blank'
-            href='https://api.whatsapp.com/send?phone=65999029120'
+            href='https://api.whatsapp.com/send?phone=65981298243'
             className='cursor-pointer hover:underline '
           >
             WhatsApp!
