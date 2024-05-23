@@ -5,18 +5,25 @@ import Header from '../components/LandingPage/Header'
 import Hero from '../components/LandingPage/Hero'
 import Product from '../components/LandingPage/Product'
 import Menu from '../components/Menu'
+import Head from 'next/head'
 
 export default function Home() {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <main className='flex w-full flex-col text-default-10'>
-      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <Header setOpenMenu={setOpenMenu} />
-      <Hero />
-      <Product />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <Head>
+        <title>Biscoitos da Lu</title>
+      </Head>
+
+      <main className='flex w-full flex-col text-default-10'>
+        <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <Header setOpenMenu={setOpenMenu} />
+        <Hero />
+        <Product />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   )
 }
