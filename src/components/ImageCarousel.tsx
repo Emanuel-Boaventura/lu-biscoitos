@@ -20,19 +20,19 @@ const ImageCarousel = ({ images }: IImageCarousel) => {
         {images.map(image => (
           <div
             key={image.description}
-            className='embla__slide flex-[0_0_100%] min-w-0 mr-[1px] cursor-pointer'
+            className='embla__slide mr-[1px] min-w-0 flex-[0_0_100%] cursor-pointer'
           >
             <div className='grid grid-cols-1 sm:grid-cols-[3fr_7fr] sm:gap-6 lg:gap-10'>
-              <div className='flex items-center justify-center border-white border-4 mb-4 sm:mb-0'>
+              <div className='mb-4 flex items-center justify-center border-4 border-white sm:mb-0'>
                 <Image
                   src={image.src}
                   alt='Carousel'
-                  className='object-cover h-28 sm:h-44 lg:h-72'
+                  className='h-28 object-cover sm:h-44 lg:h-72'
                 />
               </div>
 
-              <div className='text-center sm:text-start sm:my-auto'>
-                <p className='font-bold text-lg mb-1 sm:text-xl lg:text-2xl'>
+              <div className='text-center sm:my-auto sm:text-start'>
+                <p className='mb-1 text-lg font-bold sm:text-xl lg:text-2xl'>
                   {image.name}
                 </p>
                 <p>{image.description}</p>

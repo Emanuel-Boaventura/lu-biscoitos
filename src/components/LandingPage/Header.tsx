@@ -11,9 +11,9 @@ export default function Header({ setOpenMenu }: IHeader) {
 
   return (
     <section className='flex bg-default-800'>
-      <div className='max-container flex justify-between  items-center py-4'>
+      <div className='max-container flex items-center  justify-between py-4'>
         <div>
-          <p className='font-bold tracking-wider cursor-default'>
+          <p className='cursor-default font-bold tracking-wider'>
             Biscoitos da Lu
           </p>
         </div>
@@ -21,10 +21,10 @@ export default function Header({ setOpenMenu }: IHeader) {
         {mobile ? (
           <List
             onClick={() => setOpenMenu(prevState => !prevState)}
-            className='w-auto h-6'
+            className='h-6 w-auto'
           />
         ) : (
-          <div className='flex gap-4  items-center'>
+          <div className='flex items-center  gap-4'>
             <a
               href='#biscuits'
               className='hover:text-default-100 active:translate-y-px'
@@ -39,7 +39,7 @@ export default function Header({ setOpenMenu }: IHeader) {
             </a>
             <a
               href='#form'
-              className='default-button !py-1 !px-3 !text-default-900'
+              className='default-button !px-3 !py-1 !text-default-900'
             >
               Encomendar!
             </a>

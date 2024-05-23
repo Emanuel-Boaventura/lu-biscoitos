@@ -1,13 +1,13 @@
 export default function Contact() {
   return (
     <section className='flex bg-default-800'>
-      <div className='max-container text-center gap-4 flex flex-col justify-between items-center py-10'>
+      <div className='max-container flex flex-col items-center justify-between gap-4 py-10 text-center'>
         <h2 className='text-2xl font-bold'>Ficou interessado?</h2>
         <p>Entre em contato conosco pelo whatsapp!</p>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 31 31'
-          className='w-12 h-auto fill-default-50 mt-4 cursor-pointer hover:scale-105 transition-transform'
+          className='mt-4 h-auto w-12 cursor-pointer fill-default-50 transition-transform hover:scale-105'
         >
           <path
             d='M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017

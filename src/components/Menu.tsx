@@ -13,11 +13,11 @@ export default function Menu({ openMenu, setOpenMenu }: IMenu) {
 
   return (
     <div
-      className={`fixed right-0 w-[200px] h-screen transition-transform duration-300 bg-default-800 flex flex-col gap-4 items-center p-4 ${
+      className={`fixed right-0 flex h-screen w-[200px] flex-col items-center gap-4 bg-default-800 p-4 transition-transform duration-300 ${
         openMenu ? '' : 'translate-x-[100%]'
       }`}
     >
-      <X onClick={closeMenu} className='self-end w-auto h-6' />
+      <X onClick={closeMenu} className='h-6 w-auto self-end' />
       <a
         href='#biscuits'
         onClick={closeMenu}
@@ -35,7 +35,7 @@ export default function Menu({ openMenu, setOpenMenu }: IMenu) {
       <a
         href='#form'
         onClick={closeMenu}
-        className='default-button !py-1 !px-3 !text-default-900'
+        className='default-button !px-3 !py-1 !text-default-900'
       >
         Encomendar!
       </a>

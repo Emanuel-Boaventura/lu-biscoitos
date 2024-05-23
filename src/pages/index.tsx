@@ -10,7 +10,7 @@ export default function Home() {
   const [openMenu, setOpenMenu] = useState(false)
 
   return (
-    <main className='flex flex-col w-full text-default-10'>
+    <main className='flex w-full flex-col text-default-10'>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <Header setOpenMenu={setOpenMenu} />
       <Hero />

@@ -7,7 +7,7 @@ export default function Footer() {
           <a
             href='https://www.linkedin.com/in/emanuelboaventura/'
             target='_blank'
-            className='cursor-pointer hover:underline text-default-50 whitespace-nowrap'
+            className='cursor-pointer whitespace-nowrap text-default-50 hover:underline'
           >
             Emanuel-Boaventura
           </a>
