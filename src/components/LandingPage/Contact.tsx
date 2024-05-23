@@ -37,6 +37,8 @@ export default function Contact() {
           ))}
         </div>
 
+        <p className='-mt-4 text-sm'>Taxa de entrega: R$ 10,00</p>
+
         <p className='lg:text-lg'>
           Ficou interessado? Entre em contato conosco pelo{' '}
           <a

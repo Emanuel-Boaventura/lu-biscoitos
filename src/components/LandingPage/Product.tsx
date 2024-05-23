@@ -14,49 +14,48 @@ const allCookies = [
     src: casadinho,
     name: 'Casadinho',
     description:
-      'Biscoito de maisena com recheio de goiabada e refogado no açúcar refinado. Existe também a opção de recheio de doce de leite.',
+      'Biscoito de maisena com recheio de goiabada e refogado no açúcar refinado. Existe também a opção de recheio de doce de leite ou chocolate.',
   },
   {
     src: nata,
     name: 'Nata',
     description:
-      'Biscoito de maisena crocante com açúcar caramelizado por cima.',
+      'Biscoito de nata com trigo, crocante com açúcar caramelizado por cima.',
   },
   {
     src: leiteMoca,
     name: 'Leite Moça',
     description:
-      'Biscoito de maisena feito com leite moça. Macio e derrete na boca. (Não contem glúten)',
+      'Biscoito de maisena feito com leite moça. Macio e derrete na boca. (Não contém glúten)',
   },
   {
     src: coco,
     name: 'Coco',
     description:
-      'Biscoito de macio com lascas de coco, derretendo na boca consegue sentir o sabor do coco fresco. (Não contem glúten)',
+      'Biscoito de maisena com lascas de coco, derretendo na boca consegue sentir o sabor do coco fresco. (Não contém glúten)',
   },
   {
     src: milho,
     name: 'Milho',
-    description:
-      'Biscoito de feito com erva doce, crocante e com o sabor do milho fresco.',
+    description: 'Biscoito de fuba crocante e com o sabor do milho fresco.',
   },
-  {
-    src: francisquito,
-    name: 'Francisquito',
-    description:
-      'Biscoito de leve e crocante e açucarado, chegando a derreter na boca depois das primeiras mordidas',
-  },
+  // {
+  //   src: francisquito,
+  //   name: 'Francisquito',
+  //   description:
+  //     'Biscoito crocante com erva doce e raspas de limão.',
+  // },
   {
     src: amanteigado,
     name: 'Amanteigado',
     description:
-      'Biscoito de maisena crocante e açucarado, refogado com açúcar e canela deixa um sabor marcante na boca.',
+      'Biscoito de trigo crocante, refogado com açúcar e canela tem um sabor marcante.',
   },
   {
     src: amandita,
     name: 'Amandita',
     description:
-      'Biscoito de polvilho crocante e açucarado, tem um sabor único. (Não contem glúten)',
+      'Biscoito de polvilho crocante, derrete na boca deixando um sabor único. (Não contém glúten)',
   },
 ]
 
