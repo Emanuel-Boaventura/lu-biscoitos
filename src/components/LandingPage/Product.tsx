@@ -14,7 +14,7 @@ const allCookies = [
     src: casadinho,
     name: 'Casadinho',
     description:
-      'Biscoito de maisena com recheio de goiabada e refogado no açúcar refinado. Existe também a opção de recheio de doce de leite ou chocolate.',
+      'Biscoito de trigo com recheio de goiabada e refogado no açúcar refinado. Existe também a opção de recheio de doce de leite ou chocolate.',
   },
   {
     src: nata,
