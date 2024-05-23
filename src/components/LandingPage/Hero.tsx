@@ -1,6 +1,6 @@
 import useMediaQuery from '@/hooks/useMediaQuery'
+import hero from '@/public/og.png'
 import Image from 'next/image'
-import hero from '@/public/hero-cookies.jpg'
 
 export default function Hero() {
   const mobile = useMediaQuery('(max-width: 768px)')
@@ -13,12 +13,14 @@ export default function Hero() {
             Biscoitos da Lu
           </h1>
 
-          <Image
-            src={hero}
-            alt='Cookies'
-            quality={100}
-            className='mb-5 flex h-[8rem] w-full rounded-3xl object-cover sm:hidden'
-          />
+          <div className='mb-5 flex h-[12rem] w-[12rem] items-center justify-center overflow-hidden rounded-full sm:hidden'>
+            <Image
+              src={hero}
+              alt='Logo'
+              quality={100}
+              className='flex h-[13rem] object-cover'
+            />
+          </div>
 
           <p className='mb-5 flex text-center text-sm sm:mb-10 sm:w-[90%] sm:text-left sm:text-base'>
             {mobile
@@ -31,12 +33,14 @@ export default function Hero() {
           </a>
         </div>
 
-        <Image
-          src={hero}
-          alt='Cookies'
-          quality={100}
-          className='hidden object-contain transition-transform hover:scale-[1.01] sm:flex sm:w-[15rem] sm:rounded-3xl lg:w-[20rem]'
-        />
+        <div className='hidden items-center justify-center overflow-hidden transition-transform hover:scale-[1.025] sm:flex sm:max-h-[228px] sm:min-h-[228px] sm:min-w-[228px] sm:rounded-full lg:min-h-[360px] lg:min-w-[360px] '>
+          <Image
+            src={hero}
+            alt='Logo'
+            quality={100}
+            className='flex object-cover sm:min-h-[240px] sm:min-w-[240px] lg:min-h-[380px] lg:min-w-[380px]'
+          />
+        </div>
       </div>
     </section>
   )

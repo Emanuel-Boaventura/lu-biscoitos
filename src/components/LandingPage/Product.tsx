@@ -67,13 +67,15 @@ export default function Product() {
           {images.map(({ description, name, src }) => (
             <div
               key={name}
-              className='flex max-w-3xl flex-col gap-2 rounded-3xl bg-default-600 p-4 text-center transition-transform duration-300 hover:scale-110 md:flex-row md:items-center md:gap-16 md:even:flex-row-reverse min-[1440px]:max-w-[560px] min-[1440px]:gap-4 min-[1440px]:even:flex-row min-[1440px]:hover:scale-105'
+              className='flex max-w-[272px] flex-col gap-2 rounded-3xl bg-default-600 p-4 text-center transition-transform duration-300 hover:scale-110 md:max-w-3xl md:flex-row md:items-center md:gap-16 md:even:flex-row-reverse min-[1440px]:max-w-[560px] min-[1440px]:gap-4 min-[1440px]:even:flex-row min-[1440px]:hover:scale-105'
             >
-              <Image
-                src={src}
-                alt={'Biscoito ' + name}
-                className='max-h-48 rounded-xl object-cover md:max-h-60 md:max-w-[260px]'
-              />
+              <div className='flex max-h-56 items-center justify-center overflow-hidden rounded-xl object-cover md:max-h-60 md:max-w-[260px]'>
+                <Image
+                  src={src}
+                  alt={'Biscoito ' + name}
+                  className='object-cover pt-12'
+                />
+              </div>
               <div>
                 <h3 className='mb-2 text-2xl font-bold text-default-50 md:text-3xl'>
                   {name}
