@@ -59,9 +59,9 @@ export default function Product() {
   return (
     <section id='biscuits' className='flex bg-default-100 text-default-950'>
       <div className='max-container /sm:flex-row flex flex-col items-center justify-between py-10'>
-        <h1 className='mb-5 text-3xl font-bold tracking-wider sm:text-4xl'>
+        <h2 className='mb-5 text-3xl font-bold tracking-wider sm:text-4xl'>
           Diversos Sabores
-        </h1>
+        </h2>
 
         <div className='flex flex-wrap justify-center gap-4 '>
           {images.map(({ description, name, src }) => (

@@ -26,13 +26,6 @@ export default function Menu({ openMenu, setOpenMenu }: IMenu) {
         Biscoitos
       </a>
       <a
-        href='#about'
-        onClick={closeMenu}
-        className='hover:text-default-100 active:translate-y-px'
-      >
-        Marca
-      </a>
-      <a
         href='#form'
         onClick={closeMenu}
         className='default-button !px-3 !py-1 !text-default-900'

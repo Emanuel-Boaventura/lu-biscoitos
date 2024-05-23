@@ -32,12 +32,6 @@ export default function Header({ setOpenMenu }: IHeader) {
               Biscoitos
             </a>
             <a
-              href='#about'
-              className='hover:text-default-100 active:translate-y-px'
-            >
-              Marca
-            </a>
-            <a
               href='#contact'
               className='default-button !px-3 !py-1 !text-default-900'
             >
