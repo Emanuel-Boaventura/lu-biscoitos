@@ -5,6 +5,7 @@ import francisquito from '@/public/biscoitos/francisquito.png'
 import leiteMoca from '@/public/biscoitos/leite-moca.png'
 import milho from '@/public/biscoitos/milho.png'
 import nata from '@/public/biscoitos/nata.png'
+import amandita from '@/public/biscoitos/amandita.png'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -25,13 +26,13 @@ const allCookies = [
     src: leiteMoca,
     name: 'Leite Moça',
     description:
-      'Biscoito de maisena feito com leite moça. Macio e derrete na boca',
+      'Biscoito de maisena feito com leite moça. Macio e derrete na boca. (Não contem glúten)',
   },
   {
     src: coco,
     name: 'Coco',
     description:
-      'Biscoito de macio com lascas de coco, derretendo na boca consegue sentir o sabor do coco fresco.',
+      'Biscoito de macio com lascas de coco, derretendo na boca consegue sentir o sabor do coco fresco. (Não contem glúten)',
   },
   {
     src: milho,
@@ -51,6 +52,12 @@ const allCookies = [
     description:
       'Biscoito de maisena crocante e açucarado, refogado com açúcar e canela deixa um sabor marcante na boca.',
   },
+  {
+    src: amandita,
+    name: 'Amandita',
+    description:
+      'Biscoito de polvilho crocante e açucarado, tem um sabor único. (Não contem glúten)',
+  },
 ]
 
 export default function Product() {
@@ -64,7 +71,7 @@ export default function Product() {
         </h2>
 
         <div className='flex flex-wrap justify-center gap-4 '>
-          {images.map(({ description, name, src }) => (
+          {images.map(({ description, name, src }, idx) => (
             <div
               key={name}
               className='flex max-w-[272px] flex-col gap-2 rounded-3xl bg-default-600 p-4 text-center transition-transform duration-300 hover:scale-110 md:max-w-3xl md:flex-row md:items-center md:gap-16 md:even:flex-row-reverse min-[1440px]:max-w-[560px] min-[1440px]:gap-4 min-[1440px]:even:flex-row min-[1440px]:hover:scale-105'
@@ -73,7 +80,7 @@ export default function Product() {
                 <Image
                   src={src}
                   alt={'Biscoito ' + name}
-                  className='object-cover pt-12'
+                  className={`object-cover ${idx !== images.length - 1 ? 'pt-12' : ''}`}
                 />
               </div>
               <div>
